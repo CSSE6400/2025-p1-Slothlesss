@@ -7,7 +7,7 @@ def health():
     return jsonify({'status': 'ok'})
     
 @api.route('/todos/<int:id>', methods=['GET']) 
-def get_todos(id): 
+def get_todo(id): 
     return jsonify({
         "id": 1, 
         "title": "Watch CSSE6400 Lecture", 
